@@ -69,6 +69,7 @@ class _HomeState extends State<Home> {
     if (firstLaunch == null || firstLaunch == true) {
       Constant.updateGlobalScore(setUp: true);
       widget.pref.setBool('firstLaunch', false);
+      firstLaunch = false;
     }
     return Scaffold(
       appBar: AppBar(
